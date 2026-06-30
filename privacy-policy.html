@@ -20,128 +20,36 @@
         --brand-strong: #0d5e4f;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
         font-family: "Segoe UI", Arial, sans-serif;
-        background:
-          radial-gradient(circle at top, rgba(20, 122, 102, 0.08), transparent 32rem),
-          var(--bg);
+        background: radial-gradient(circle at top, rgba(20, 122, 102, 0.08), transparent 32rem), var(--bg);
         color: var(--text);
         line-height: 1.65;
       }
 
-      .wrap {
-        width: min(900px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 48px 0 64px;
-      }
-
-      .hero,
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        box-shadow: 0 20px 50px rgba(24, 32, 28, 0.06);
-      }
-
-      .hero {
-        padding: 32px;
-        margin-bottom: 20px;
-      }
-
-      .badge {
-        display: inline-block;
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(20, 122, 102, 0.12);
-        color: var(--brand-strong);
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-      }
-
-      h1 {
-        margin: 18px 0 8px;
-        font-size: clamp(32px, 6vw, 48px);
-        line-height: 1.1;
-      }
-
-      .subtitle {
-        margin: 0;
-        max-width: 680px;
-        color: var(--muted);
-        font-size: 18px;
-      }
-
-      .meta {
-        margin-top: 18px;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .grid {
-        display: grid;
-        gap: 20px;
-      }
-
-      .card {
-        padding: 28px;
-      }
-
-      h2 {
-        margin: 0 0 12px;
-        font-size: 24px;
-      }
-
-      p {
-        margin: 0 0 12px;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      li + li {
-        margin-top: 8px;
-      }
-
-      .note {
-        padding: 16px 18px;
-        border-left: 4px solid var(--brand);
-        background: rgba(20, 122, 102, 0.08);
-        border-radius: 16px;
-      }
-
-      a {
-        color: var(--brand-strong);
-      }
-
-      footer {
-        margin-top: 20px;
-        color: var(--muted);
-        font-size: 14px;
-      }
+      .wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+      .hero, .card { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 20px 50px rgba(24, 32, 28, 0.06); }
+      .hero { padding: 32px; margin-bottom: 20px; }
+      .badge { display: inline-block; padding: 8px 14px; border-radius: 999px; background: rgba(20, 122, 102, 0.12); color: var(--brand-strong); font-size: 14px; font-weight: 700; letter-spacing: 0.02em; }
+      h1 { margin: 18px 0 8px; font-size: clamp(32px, 6vw, 48px); line-height: 1.1; }
+      .subtitle { margin: 0; max-width: 680px; color: var(--muted); font-size: 18px; }
+      .meta { margin-top: 18px; color: var(--muted); font-size: 14px; }
+      .grid { display: grid; gap: 20px; }
+      .card { padding: 28px; }
+      h2 { margin: 0 0 12px; font-size: 24px; }
+      p { margin: 0 0 12px; }
+      ul { margin: 0; padding-left: 20px; }
+      li + li { margin-top: 8px; }
+      .note { padding: 16px 18px; border-left: 4px solid var(--brand); background: rgba(20, 122, 102, 0.08); border-radius: 16px; }
+      a { color: var(--brand-strong); }
+      footer { margin-top: 20px; color: var(--muted); font-size: 14px; }
 
       @media (max-width: 640px) {
-        .wrap {
-          width: min(100% - 20px, 900px);
-          padding: 20px 0 40px;
-        }
-
-        .hero,
-        .card {
-          border-radius: 20px;
-        }
-
-        .hero,
-        .card {
-          padding: 22px;
-        }
+        .wrap { width: min(100% - 20px, 900px); padding: 20px 0 40px; }
+        .hero, .card { border-radius: 20px; padding: 22px; }
       }
     </style>
   </head>
@@ -150,11 +58,8 @@
       <section class="hero">
         <span class="badge">FitCale</span>
         <h1>Gizlilik Politikası</h1>
-        <p class="subtitle">
-          Bu politika, FitCale uygulamasının kullanıcı verilerini nasıl topladığını, kullandığını ve
-          sakladığını açıklar.
-        </p>
-        <p class="meta">Son güncelleme: 8 Mayıs 2026</p>
+        <p class="subtitle">Bu politika, FitCale uygulamasının kullanıcı verilerini nasıl topladığını, kullandığını ve sakladığını açıklar.</p>
+        <p class="meta">Son güncelleme: 30 Haziran 2026</p>
       </section>
 
       <div class="grid">
@@ -162,90 +67,67 @@
           <h2>Toplanan veriler</h2>
           <p>FitCale, uygulamanın temel özelliklerini sunmak için aşağıdaki verileri işleyebilir:</p>
           <ul>
-            <li>Profil bilgileri: yaş, boy, kilo, hedef bilgileri</li>
+            <li>Profil bilgileri: ad, yaş, cinsiyet, boy, kilo ve hedef bilgileri</li>
             <li>Beslenme verileri: öğün kayıtları, kalori ve makro besin değerleri</li>
             <li>Su takibi ve kilo geçmişi</li>
             <li>Aktivite verileri: yürüyüş, koşu, süre, mesafe, tempo, adım ve rota geçmişi</li>
+            <li>Yerel tercihler: tema ve bildirim ayarları</li>
             <li>Satın alma durumu: reklamsız sürüm kilidini doğrulamak için Google Play satın alma bilgisi</li>
           </ul>
         </section>
 
         <section class="card">
           <h2>Konum verileri</h2>
-          <p>
-            Konum verisi yalnızca yürüyüş ve koşu takibini göstermek, mesafe hesaplamak ve rota geçmişi
-            oluşturmak için kullanılır.
-          </p>
-          <div class="note">
-            FitCale, konum verisini yalnızca kullanıcı aktivite takibini başlattığında kullanmayı amaçlar.
-          </div>
+          <p>Konum verisi yalnızca kullanıcı yürüyüş veya koşu takibini başlattığında rota çizmek, mesafe hesaplamak ve aktivite geçmişi oluşturmak için kullanılır.</p>
         </section>
 
         <section class="card">
           <h2>Reklamlar ve satın alma</h2>
-          <p>
-            Uygulama, reklamsız sürüm satın alınmadıysa reklam gösterebilir. Bu durumda Google AdMob SDK
-            kullanılabilir. Reklamsız kullanım için Google Play üzerinden tek seferlik satın alma sunulabilir.
-          </p>
+          <p>Uygulama, reklamsız sürüm satın alınmadıysa Google AdMob ile reklam gösterebilir. Reklamsız kullanım için Google Play üzerinden tek seferlik satın alma sunulabilir.</p>
         </section>
 
-        <section class="card">
-          <h2>Verilerin saklanması</h2>
-          <p>
-            FitCale'deki profil, beslenme, su, kilo ve aktivite geçmişi verileri temel olarak kullanıcının
-            kendi cihazında yerel olarak saklanır.
-          </p>
-          <p>
-            Bu veriler, kullanıcı uygulamayı kullanmaya devam ettiği ve verileri silmediği sürece cihazda
-            tutulur. FitCale bu sürümde kullanıcı hesabı oluşturmaz ve profil, öğün, kilo, su veya aktivite
-            geçmişini kalıcı bir FitCale sunucusunda saklamaz.
-          </p>
-          <p>
-            Harita ve reklam gibi üçüncü taraf hizmetlere gönderilen veriler, ilgili hizmet sağlayıcıların
-            kendi saklama politikalarına göre işlenebilir.
-          </p>
+        <section class="card" id="veri-saklama">
+          <h2>Veri saklama süresi ve politikası</h2>
+          <div class="note"><strong>Özet:</strong> FitCale kullanıcı verilerini kendi sunucularında saklamaz. Cihazdaki kullanıcı verileri, kullanıcı silene kadar saklanır.</div>
+          <p>Profil bilgileri, beslenme kayıtları, su kayıtları, kilo geçmişi, aktivite oturumları ve kaydedilmiş rota verileri için sabit bir takvim süresi uygulanmaz. Bu veriler yalnızca kullanıcının cihazında tutulur ve kullanıcı ilgili kaydı silene, uygulama içindeki <strong>“Baştan başla”</strong> işlemini kullanana, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar saklanır.</p>
+          <p>Tema, bildirim tercihleri ve reklamsız kullanım durumu gibi yerel ayarlar, kullanıcı bunları değiştirene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar cihazda tutulabilir. FitCale kullanıcı hesabı oluşturmaz; profil, öğün, su, kilo, aktivite veya rota geçmişinin sunucu tarafında bir kopyasını saklamaz.</p>
+          <p>Google AdMob, Google Play Billing, MapTiler ve USDA FoodData Central gibi üçüncü taraf hizmetlerin teknik olarak işlediği veriler, ilgili hizmet sağlayıcının kendi saklama ve silme politikalarına tabidir.</p>
         </section>
 
-        <section class="card">
-          <h2>Verilerin silinmesi</h2>
-          <p>Aşağıdaki durumlarda yerel veriler cihazdan silinir veya artık FitCale tarafından tutulmaz:</p>
+        <section class="card" id="veri-silme">
+          <h2>Veri silme politikası</h2>
+          <p>Kullanıcı, FitCale tarafından yerel olarak tutulan verileri şu yollarla silebilir:</p>
           <ul>
-            <li>Uygulama cihazdan kaldırılırsa</li>
-            <li>Uygulama verileri cihaz ayarlarından temizlenirse</li>
-            <li>Uygulama içindeki sıfırlama akışı kullanılırsa</li>
+            <li>Silme seçeneği bulunan öğün, su, kilo veya aktivite kayıtlarını tek tek silerek</li>
+            <li><strong>Profil &gt; Baştan başla</strong> yolunu kullanarak profil, öğün, su, kilo, aktivite ve rota geçmişini hemen silerek</li>
+            <li>Cihaz ayarlarından FitCale uygulama verilerini temizleyerek</li>
+            <li>FitCale uygulamasını cihazdan kaldırarak</li>
           </ul>
-          <p>
-            Kullanıcı verilerini silmek için uygulama içindeki sıfırlama özelliğini kullanabilir veya cihaz
-            ayarlarından FitCale uygulama verilerini temizleyebilir. Bu işlemler yerel geçmişi kaldırır.
-          </p>
+          <p>Silinen yerel kullanıcı geçmişinin FitCale sunucusunda tutulmuş bir yedeği bulunmadığından, FitCale tarafından ayrıca saklanan veya kurtarılabilen bir sunucu kopyası kalmaz.</p>
         </section>
 
         <section class="card">
           <h2>Üçüncü taraf hizmetler</h2>
-          <p>FitCale aşağıdaki üçüncü taraf hizmetlerden yararlanabilir:</p>
           <ul>
-            <li>Google Play Billing</li>
-            <li>Google AdMob</li>
-            <li>MapTiler veya benzeri harita servisleri</li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Play Billing ve Google AdMob</a></li>
+            <li><a href="https://www.maptiler.com/privacy-policy/" rel="noopener noreferrer">MapTiler</a></li>
+            <li><a href="https://www.usda.gov/privacy-policy" rel="noopener noreferrer">USDA FoodData Central</a></li>
           </ul>
         </section>
 
         <section class="card">
+          <h2>Veri güvenliği</h2>
+          <p>Yerel kullanıcı geçmişi uygulamanın cihazdaki özel veri alanında tutulur. Üçüncü taraf hizmetlerle yapılan ağ iletişimlerinde HTTPS kullanılır. FitCale kişisel ve hassas kullanıcı verilerini satmaz.</p>
+        </section>
+
+        <section class="card">
           <h2>İletişim</h2>
-          <p>
-            Gizlilik politikasıyla ilgili sorular için GitHub proje sayfası üzerinden iletişime geçebilirsiniz:
-          </p>
-          <p>
-            <a href="https://github.com/trsnacar/fitcal-ai" rel="noopener noreferrer">
-              github.com/trsnacar/fitcal-ai
-            </a>
-          </p>
+          <p>FitCale, Google Play'de <strong>Appazar Dev</strong> tarafından yayımlanmaktadır. Gizlilik politikası veya kullanıcı verileriyle ilgili soru ve talepler için aşağıdaki iletişim mekanizmasını kullanabilirsiniz:</p>
+          <p><a href="https://github.com/trsnacar/fitcal-ai/issues/new" rel="noopener noreferrer">Gizlilik talebi gönder</a></p>
         </section>
       </div>
 
-      <footer>
-        Bu sayfa GitHub Pages üzerinde yayınlanmak üzere hazırlanmıştır.
-      </footer>
+      <footer>© 2026 Appazar Dev · FitCale Gizlilik Politikası</footer>
     </main>
   </body>
 </html>
